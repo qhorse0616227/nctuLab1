@@ -1,14 +1,15 @@
 # Download base image from yungshenglu/ubuntu-env:16.04 (Task 1.)
-
+FROM yungshenglu/Ubuntu-env:16.0
 
 # Update software repository (Task 1.)
-
+RUN apt-get update
+RUN apt-get install tcpdump
 
 # Install software repository (Task 1.)
-
+RUN pip install scapy
 
 # Install packages (Task 1.)
-
+RUN pip install scapy
 
 # Use argument to assign passwd to create image
 RUN echo 'root:cn2018' | chpasswd
@@ -23,9 +24,10 @@ ENV LC_ALL C
 RUN echo "export VISIBLE=now" >> /etc/profile
 
 # Set the container listens on the specified ports at runtime (Task 1.)
-
+EXPOSE 22
 
 # Set the entrypoint
 CMD ["/usr/sbin/sshd", "-D"]
 
 # Clone the repository from GitHub (Task 1.)
+RUN git clone https://github.com/nctucn/lab1-Larry8799.git
