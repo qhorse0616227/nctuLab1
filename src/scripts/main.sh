@@ -139,4 +139,3 @@ elif [ "$1" == "download" ]; then
 fi
 
 $1
-
