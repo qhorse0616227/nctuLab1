@@ -22,10 +22,10 @@ def main():
     # Define IP header (Task 3.)
     ip = IP(src = src_ip, dst = dst_ip)
 
-    # Define customized header (Task 3.)
-    my_id = '0616064'
+    # Define customized header (Task 3)
+    my_id = '0616001'
     my_dept = 'computer_science'
-    my_gender = 'male'
+    my_gender = 'female'
     student = Protocol(id = my_id, dept = my_dept, gender = my_gender)
 
     # Read file and store into list
