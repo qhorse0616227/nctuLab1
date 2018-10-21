@@ -23,8 +23,8 @@ def main():
     ip = IP(src = src_ip, dst = dst_ip)
 
     # Define customized header (Task 3)
-    my_id = '0616001'
-    my_dept = 'computer_science'
+    my_id = '0616227'
+    my_dept = 'ME'
     my_gender = 'female'
     student = Protocol(id = my_id, dept = my_dept, gender = my_gender)
 
