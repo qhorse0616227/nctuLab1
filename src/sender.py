@@ -24,7 +24,7 @@ def main():
 
     # Define customized header (Task 3)
     my_id = '0616227'
-    my_dept = 'ME'
+    my_dept = 'CS'
     my_gender = 'female'
     student = Protocol(id = my_id, dept = my_dept, gender = my_gender)
 
